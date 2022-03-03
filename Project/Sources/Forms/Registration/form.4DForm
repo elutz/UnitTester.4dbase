@@ -1,0 +1,129 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onDataChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"reg_key_t": {
+					"type": "input",
+					"top": 17,
+					"left": 97,
+					"width": 183,
+					"height": 13,
+					"dataSource": "reg_key_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/reg_key_t.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke",
+						"onAfterEdit"
+					]
+				},
+				"btn_ok": {
+					"type": "button",
+					"top": 73,
+					"left": 224,
+					"width": 56,
+					"height": 22,
+					"dataSource": "btn_ok",
+					"text": "OK",
+					"class": "Default",
+					"method": "ObjectMethods/btn_ok.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_cancel": {
+					"type": "button",
+					"top": 73,
+					"left": 145,
+					"width": 61,
+					"height": 22,
+					"dataSource": "btn_cancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 38,
+					"left": 17,
+					"width": 71,
+					"height": 13,
+					"class": "Default",
+					"text": "License Type : "
+				},
+				"Text1": {
+					"type": "text",
+					"top": 18,
+					"left": 17,
+					"width": 71,
+					"height": 13,
+					"class": "Default",
+					"text": "License Key : "
+				},
+				"reg_type_t": {
+					"type": "input",
+					"top": 38,
+					"left": 97,
+					"width": 183,
+					"height": 13,
+					"dataSource": "reg_type_t",
+					"class": "Default",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke",
+						"onAfterEdit"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

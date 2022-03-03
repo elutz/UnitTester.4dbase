@@ -1,0 +1,1 @@
+﻿Unit_AssertFalse ( expression_boo  { ; descriptionOfFailure_t } )    Required Parameters:  C_BOOL ( $1; expression_boo)    Optional Parameters:  C_TEXT ( $2; descriptionOfFailure_t )    Description:  This method asserts that expression_boo = False.  If expression_boo = True, the test fails and  outputs either "Failed" or if descriptionFailure_t (if passed).

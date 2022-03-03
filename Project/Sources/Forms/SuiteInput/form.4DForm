@@ -1,0 +1,120 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "Test Suite Input",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 19,
+					"left": 18,
+					"width": 85,
+					"height": 13,
+					"class": "Default",
+					"text": "Suite name :"
+				},
+				"Text2": {
+					"type": "text",
+					"top": 41,
+					"left": 18,
+					"width": 290,
+					"height": 13,
+					"class": "Default",
+					"text": "Test methods to create (one method per line, omit prefix)"
+				},
+				"suite_add_name_t": {
+					"type": "input",
+					"top": 19,
+					"left": 113,
+					"width": 201,
+					"height": 13,
+					"dataSource": "suite_add_name_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/suite_add_name_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"suite_add_methods_t": {
+					"type": "input",
+					"top": 59,
+					"left": 20,
+					"width": 280,
+					"height": 193,
+					"dataSource": "suite_add_methods_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"method": "ObjectMethods/suite_add_methods_t.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 272,
+					"left": 248,
+					"width": 67,
+					"height": 22,
+					"dataSource": "btn_accept",
+					"text": "Save",
+					"class": "Default",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_cancel": {
+					"type": "button",
+					"top": 272,
+					"left": 161,
+					"width": 67,
+					"height": 22,
+					"dataSource": "btn_cancel",
+					"action": "cancel",
+					"text": "Cancel",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

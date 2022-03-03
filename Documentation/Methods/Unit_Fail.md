@@ -1,0 +1,1 @@
+﻿Unit_Fail ( { descriptionOfFailure_t } )    Required Parameters:  none  Optional Parameters:  C_TEXT ( $1; descriptionOfFailure_t )    Description:  This method causes the test to fail and  outputs either "Failed" or if descriptionFailure_t (if passed).

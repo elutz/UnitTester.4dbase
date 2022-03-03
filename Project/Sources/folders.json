@@ -1,0 +1,498 @@
+﻿{
+	"Assertion Tests": {
+		"methods": [
+			"_Unit_AssertEquals",
+			"_Unit_AssertEqualsNumeric",
+			"_Unit_AssertNotEquals",
+			"_Unit_RecordEqualAssert"
+		]
+	},
+	"Build Document": {
+		"groups": [
+			"Build Document Tests"
+		],
+		"methods": [
+			"helper_BuildApplication",
+			"helper_BuildApplicationCallback",
+			"helper_BuildErrorHandler",
+			"helper_BuildPathGet",
+			"helper_BuildPathLinkPath",
+			"helper_BuildPathSelect",
+			"helper_BuildPathSet",
+			"helper_ThermoBarbershopStart",
+			"helper_ThermoBarbershopStop"
+		]
+	},
+	"Build Document Tests": {
+		"methods": [
+			"_helper_BuildPathGet"
+		]
+	},
+	"Code Conventions": {
+		"methods": [
+			"conv_ConventionArraysLoad",
+			"conv_TestCaseMethodPrefixGet",
+			"conv_TypeFromVarNameGet",
+			"conv_TypePrefixGet",
+			"conv_TypePrefixSet",
+			"conv_TypeSuffixGet",
+			"conv_TypeSuffixSet"
+		]
+	},
+	"Compiler Methods": {
+		"methods": [
+			"Compiler_Arrays",
+			"Compiler_Arrays_Inter",
+			"Compiler_Methods",
+			"Compiler_Variables",
+			"ComponentMode"
+		]
+	},
+	"Daemon": {
+		"groups": [
+			"Daemon Tests"
+		],
+		"methods": [
+			"helper_DaemonController",
+			"helper_DaemonIsExecuting",
+			"helper_DispatcherIsExecuting",
+			"helper_GetDaemonProcess",
+			"helper_OffloadToDaemon",
+			"helper_QuitDaemon",
+			"helper_StartDaemon",
+			"helper_StartDispatcher"
+		]
+	},
+	"Daemon Tests": {},
+	"Dev Log": {
+		"groups": [
+			"Dev Log Tests"
+		],
+		"methods": [
+			"logger_ensure_file",
+			"logger_error",
+			"logger_info",
+			"logger_init"
+		]
+	},
+	"Dev Log Tests": {
+		"methods": [
+			"_logger"
+		]
+	},
+	"Event Handler Tests": {},
+	"Event Handlers": {
+		"groups": [
+			"Event Handler Tests"
+		],
+		"methods": [
+			"method_eh_form_method",
+			"method_eh_prop_soap",
+			"prefs_eh_form_method",
+			"runner_eh_build_btn",
+			"runner_eh_form_method",
+			"runner_eh_tests_list"
+		]
+	},
+	"Exception Tests": {
+		"methods": [
+			"__Exceptions"
+		]
+	},
+	"Exceptions": {
+		"groups": [
+			"Exception Tests"
+		],
+		"methods": [
+			"_callstack_initialize",
+			"_callstack_method_at_index",
+			"_callstack_pop",
+			"_callstack_push",
+			"_callstack_push_on_error",
+			"_callstack_size",
+			"_E_Catch",
+			"_E_Initialize",
+			"_E_Message",
+			"_E_Throw",
+			"_E_Try",
+			"_E_Try_on_error",
+			"c_unit_error_handler"
+		]
+	},
+	"Helper Methods": {
+		"groups": [
+			"Helper Tests"
+		],
+		"methods": [
+			"helper_ArrayAppendArray",
+			"helper_ArrayClear",
+			"helper_ArrayTextAppend",
+			"helper_ArrayTextDeleteBlanks",
+			"helper_ArrayToText",
+			"helper_AssignParameters",
+			"helper_BlobsCompare",
+			"helper_ComboBoxTypeAhead",
+			"helper_DefaultValue",
+			"helper_DefaultValueString",
+			"helper_DirectoryCopy",
+			"helper_DirectoryDeleteRecursive",
+			"helper_DocumentName",
+			"helper_DocumentToText",
+			"helper_EditMenuAdd",
+			"helper_EqualAssertMethodForType",
+			"helper_ErrorCallReset",
+			"helper_ErrorCallSet",
+			"helper_GetResourceImage",
+			"helper_Increment",
+			"helper_InstallPlugin",
+			"helper_IsArray",
+			"helper_IsDuplicateInArray",
+			"helper_IsValidEmail",
+			"helper_ListAppend",
+			"helper_ListAppendWithIcon",
+			"helper_ListExpand",
+			"helper_ListFindIn",
+			"helper_ListItemParameterTextGet",
+			"helper_ListItemRefByPositionGet",
+			"helper_ListItemRefGreatestGet",
+			"helper_ListItemSublistGet",
+			"helper_ListItemTextByPosGet",
+			"helper_ListItemTextByRefGet",
+			"helper_OpenProjectForm",
+			"helper_ParameterStringParse",
+			"helper_ParentDirectory",
+			"helper_PathToUnix",
+			"helper_PicturesCompare",
+			"helper_PointerToStringForExecut",
+			"helper_PopupMenu",
+			"helper_ProcessExists",
+			"helper_ProcessName",
+			"helper_RecordToBLOB",
+			"helper_RegExMatchAllOccurances",
+			"helper_RegExMatchReplace",
+			"helper_SelfStart",
+			"helper_SetListItemIcon",
+			"helper_SetListItemParameter",
+			"helper_SetListItemParameterText",
+			"helper_SuitesArrayGet",
+			"helper_SuitesListToDocument",
+			"helper_TablePointerFromNameGet",
+			"helper_TestFileToListLoad",
+			"helper_TestMethodCreate",
+			"helper_TextToArray",
+			"helper_TextToDocument",
+			"helper_TimestampDifferenceGet",
+			"helper_TimestampGet",
+			"helper_TimestampToISO",
+			"helper_Trim",
+			"helper_type_ahead",
+			"helper_Type4dCompilerCommand",
+			"helper_Type4dCompilerType",
+			"helper_Type4dDataTypesGet",
+			"helper_Type4dIsAlpha",
+			"helper_Type4dIsBLOB",
+			"helper_Type4dIsBoolean",
+			"helper_Type4dIsDate",
+			"helper_Type4dIsInteger",
+			"helper_Type4dIsIntegerShort",
+			"helper_Type4dIsPicture",
+			"helper_Type4dIsPointer",
+			"helper_Type4dIsReal",
+			"helper_Type4dIsTime",
+			"helper_Type4dName",
+			"helper_UnixPathGet",
+			"helper_XMLAppendElement",
+			"helper_XMLElementNameGet",
+			"suite_ListItemTypeIsSuite",
+			"suite_ListItemTypeIsTestCase"
+		]
+	},
+	"Helper Tests": {
+		"methods": [
+			"_helper_ArrayTextAppend",
+			"_helper_ArrayTextDeleteBlanks",
+			"_helper_ArrayToText",
+			"_helper_DocumentToText",
+			"_helper_IsEmailValid",
+			"_helper_LoadTestFile",
+			"_helper_PrefTypeFromVarNameGet",
+			"_helper_SaveSuitesDocument",
+			"_helper_TimestampDifferenceGet",
+			"_helper_TimestampGet",
+			"_helper_TimestampToISO"
+		]
+	},
+	"Log": {
+		"groups": [
+			"Log Tests"
+		],
+		"methods": [
+			"log_assertion",
+			"log_list",
+			"log_save",
+			"log_test",
+			"log_test_case",
+			"log_truncate_files"
+		]
+	},
+	"Log Tests": {
+		"methods": [
+			"_log_list"
+		]
+	},
+	"Macros": {
+		"methods": [
+			"Macro_CreateMethodsOnHost",
+			"Macro_CreateRecord",
+			"Macro_GenerateWrappers"
+		]
+	},
+	"Method Creator": {
+		"groups": [
+			"Method Creator Tests"
+		],
+		"methods": [
+			"method_CreateMethod",
+			"method_CreateTestCase",
+			"method_Edit",
+			"method_HeaderBuild",
+			"method_HomeFolderArrayLoad",
+			"method_HomeFolderArraySave",
+			"method_ParamNameForceLocal",
+			"method_SyntaxGet"
+		],
+		"forms": [
+			"CreateMethod"
+		]
+	},
+	"Method Creator Tests": {
+		"methods": [
+			"_method_HomeFolderArraySave",
+			"_method_SyntaxGet"
+		]
+	},
+	"Mock": {
+		"groups": [
+			"Mock Tests"
+		],
+		"methods": [
+			"Unit_Mock_RecordCreate",
+			"Unit_Mock_Setup",
+			"Unit_Mock_TearDown"
+		]
+	},
+	"Mock Tests": {
+		"methods": [
+			"_Unit_Mock_RecordCreate"
+		]
+	},
+	"Paths": {
+		"methods": [
+			"paths_CurrentVersionFile",
+			"paths_DevLogFile",
+			"paths_DocumentationGet",
+			"paths_DownloadPage",
+			"paths_HomeFolderArrayGet",
+			"paths_HostMethods",
+			"paths_HostPluginsFolderGet",
+			"paths_LogFilesDirectoryGet",
+			"paths_LogFileXSLGet",
+			"paths_MethodHeaderTemplateGet",
+			"paths_PrefsGet",
+			"paths_SupportPluginCopyGet",
+			"paths_SupportPluginInstalledGet",
+			"paths_TestCaseTemplateGet",
+			"paths_TestFileGet",
+			"paths_TestsResourceFolderGet",
+			"paths_UnitLicenseGet",
+			"paths_WrapperMethods"
+		]
+	},
+	"Preferences": {
+		"groups": [
+			"Code Conventions"
+		],
+		"methods": [
+			"prefs_CheckboxToString",
+			"prefs_ConventionsStrictGet",
+			"prefs_CreateTestDefaultGet",
+			"prefs_GetById",
+			"prefs_GetForCheckbox",
+			"prefs_HidePassesGet",
+			"prefs_LogGenerateGet",
+			"prefs_LogGenerateSet",
+			"prefs_Open",
+			"prefs_ParsePreferencesFile",
+			"prefs_Save",
+			"prefs_SetById"
+		]
+	},
+	"Result Tests": {},
+	"Results": {
+		"groups": [
+			"Result Tests"
+		],
+		"methods": [
+			"results_assertion_fail",
+			"results_assertion_pass",
+			"results_test_case_fail",
+			"results_test_case_pass",
+			"results_test_fail",
+			"results_test_pass"
+		]
+	},
+	"Setup": {
+		"groups": [
+			"Setup Tests"
+		],
+		"methods": [
+			"setup_copy_template",
+			"setup_copy_templates",
+			"setup_ensure_4d_pack",
+			"setup_ensure_plugin",
+			"setup_license_decode",
+			"setup_license_seats",
+			"setup_license_seats_tostring",
+			"setup_license_type",
+			"setup_license_update",
+			"setup_update_host_method",
+			"setup_validate_key"
+		]
+	},
+	"Setup Tests": {
+		"methods": [
+			"_setup_copy_template",
+			"_setup_enforece_seats",
+			"_setup_license_type",
+			"_setup_validate_key"
+		]
+	},
+	"Shared Methods": {
+		"methods": [
+			"Unit__LaunchUnitTester",
+			"Unit__MethodCreatorOpen",
+			"Unit__ServerShutdown",
+			"Unit__ServerStartup",
+			"Unit_ArrayEqualAssert",
+			"Unit_ArrayNotEqualAssert",
+			"Unit_BeginTest",
+			"Unit_BLOBEqualAssert",
+			"Unit_BLOBNotEqualAssert",
+			"Unit_CurrentTestCaseMethod",
+			"Unit_CustomLogTextSet",
+			"Unit_DateEqualAssert",
+			"Unit_DateNotEqualAssert",
+			"Unit_EqualAssert",
+			"Unit_Fail",
+			"Unit_FalseAssert",
+			"Unit_IntegerEqualAssert",
+			"Unit_IntegerNotEqualAssert",
+			"Unit_NotEqualAssert",
+			"Unit_NumericEqualAssert",
+			"Unit_NumericNotEqualAssert",
+			"Unit_PictureEqualAssert",
+			"Unit_PictureNotEqualAssert",
+			"Unit_PointerEqualAssert",
+			"Unit_PointerNotEqualAssert",
+			"Unit_RecordEqualAssert",
+			"Unit_RecordNotEqualAssert",
+			"Unit_TextEqualAssert",
+			"Unit_TextNotEqualAssert",
+			"Unit_TimeEqualAssert",
+			"Unit_TimeNotEqualAssert",
+			"Unit_TrueAssert"
+		]
+	},
+	"Suite List Tests": {
+		"methods": [
+			"_suite_SetListItemType"
+		]
+	},
+	"Suite Method Tests": {
+		"methods": [
+			"_suite_PositionInList"
+		]
+	},
+	"Suite Methods": {
+		"groups": [
+			"Suite List Tests",
+			"Suite Method Tests"
+		],
+		"methods": [
+			"suite_AddTestCase",
+			"suite_AddTestSuite",
+			"suite_ContextualMenu",
+			"suite_DeleteSelected",
+			"suite_GetAllUnitItemRefs",
+			"suite_GetListItemType",
+			"suite_GetSelectedItems",
+			"suite_MoveListItem",
+			"suite_OpenInputForm",
+			"suite_PositionInList",
+			"suite_Run",
+			"suite_SetListItemIcon",
+			"suite_SetListItemType"
+		]
+	},
+	"Team": {
+		"groups": [
+			"Team Tests"
+		],
+		"methods": [
+			"client_request_delete",
+			"client_request_send",
+			"client_request_suite_add",
+			"client_request_test_case_add",
+			"client_request_update",
+			"client_server_blob_get",
+			"server_blob_to_document",
+			"server_client_register",
+			"server_client_unregister",
+			"server_document_to_blob",
+			"server_document_to_text",
+			"server_is_running",
+			"server_request_processor_kill",
+			"server_request_processor_start",
+			"server_request_procssor_process",
+			"server_request_queue_is_empty",
+			"server_request_queue_kill",
+			"server_request_queue_process",
+			"server_request_queue_start"
+		]
+	},
+	"Team Tests": {
+		"methods": [
+			"_client_request_send",
+			"_server_client_register",
+			"_server_request_processor_start",
+			"_server_request_queue_is_empty",
+			"_server_request_queue_start"
+		]
+	},
+	"Temp": {
+		"groups": [
+			"Temp Tests"
+		],
+		"methods": [
+			"StringSplit",
+			"TextArrayToString"
+		]
+	},
+	"Temp Tests": {
+		"methods": [
+			"_StringSplit",
+			"_TextArrayToString"
+		]
+	},
+	"Version Control": {
+		"methods": [
+			"version_control"
+		]
+	},
+	"Web Form": {
+		"methods": [
+			"web_OpenURL"
+		]
+	},
+	"trash": {}
+}

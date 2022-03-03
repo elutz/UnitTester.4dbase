@@ -1,0 +1,953 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "Preferences",
+	"rightMargin": 19,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 9,
+					"left": 17,
+					"width": 451,
+					"height": 440,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Tab Control",
+					"dataSourceTypeHint": "arrayText",
+					"labels": [
+						"General",
+						"Method Creator"
+					],
+					"class": "Default",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_save": {
+					"type": "button",
+					"top": 459,
+					"left": 397,
+					"width": 71,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_save",
+					"text": "Save",
+					"class": "Default",
+					"method": "ObjectMethods/btn_save.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_cancel": {
+					"type": "button",
+					"top": 459,
+					"left": 306,
+					"width": 71,
+					"height": 22,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "btn_cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Default",
+					"method": "ObjectMethods/btn_cancel.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 238,
+					"left": 28,
+					"width": 375,
+					"height": 83,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Log File Preferences"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 145,
+					"left": 28,
+					"width": 375,
+					"height": 88,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Build Preferences"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 41,
+					"left": 26,
+					"width": 66,
+					"height": 14,
+					"class": "Default",
+					"text": "Your name :"
+				},
+				"sc_feedback_by": {
+					"type": "input",
+					"top": 41,
+					"left": 94,
+					"width": 228,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "sc_feedback_by",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"sc_feedback_email": {
+					"type": "input",
+					"top": 61,
+					"left": 94,
+					"width": 228,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "sc_feedback_email",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ckbx_check_updates": {
+					"type": "checkbox",
+					"top": 84,
+					"left": 26,
+					"width": 178,
+					"height": 13,
+					"dataSource": "ckbx_check_updates",
+					"text": "Automatically check for updates",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_hide_passes": {
+					"type": "checkbox",
+					"top": 104,
+					"left": 26,
+					"width": 198,
+					"height": 13,
+					"dataSource": "ckbx_hide_passes",
+					"text": "Only show failed cases in detail pane",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_error_handler_cancel": {
+					"type": "checkbox",
+					"top": 124,
+					"left": 26,
+					"width": 233,
+					"height": 13,
+					"dataSource": "ckbx_error_handler_cancel",
+					"text": "Do not handle errors (let 4D catch errors)",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text4": {
+					"type": "text",
+					"top": 61,
+					"left": 26,
+					"width": 66,
+					"height": 14,
+					"class": "Default",
+					"text": "Your email :"
+				},
+				"Text11": {
+					"type": "text",
+					"top": 169,
+					"left": 37,
+					"width": 101,
+					"height": 13,
+					"class": "Default",
+					"text": "BuildApp path :"
+				},
+				"Text12": {
+					"type": "text",
+					"top": 189,
+					"left": 37,
+					"width": 101,
+					"height": 13,
+					"class": "Default",
+					"text": "Post-build method :"
+				},
+				"btn_select2": {
+					"type": "button",
+					"top": 170,
+					"left": 363,
+					"width": 18,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "btn_select",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"focusable": false,
+					"text": "...",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/btn_select2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"build_app_path_t1": {
+					"type": "input",
+					"top": 170,
+					"left": 140,
+					"width": 218,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "build_app_path_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"post_build_method_t1": {
+					"type": "input",
+					"top": 190,
+					"left": 140,
+					"width": 218,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "post_build_method_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ckbx_build_auto": {
+					"type": "checkbox",
+					"top": 209,
+					"left": 37,
+					"width": 238,
+					"height": 13,
+					"dataSource": "ckbx_build_auto",
+					"text": "Automatically build on successful Run All",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_log_generate1": {
+					"type": "checkbox",
+					"top": 257,
+					"left": 39,
+					"width": 158,
+					"height": 13,
+					"dataSource": "ckbx_log_generate",
+					"text": "Generate log file on Run All",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Text13": {
+					"type": "text",
+					"top": 277,
+					"left": 37,
+					"width": 81,
+					"height": 13,
+					"class": "Default",
+					"text": "Log directory :"
+				},
+				"btn_select3": {
+					"type": "button",
+					"top": 278,
+					"left": 363,
+					"width": 18,
+					"height": 14,
+					"sizingX": "move",
+					"dataSource": "btn_select",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"focusable": false,
+					"text": "...",
+					"iconFrames": 4,
+					"style": "bevel",
+					"method": "ObjectMethods/btn_select3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"log_directory_path_t1": {
+					"type": "input",
+					"top": 278,
+					"left": 120,
+					"width": 238,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "log_directory_path_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text14": {
+					"type": "text",
+					"top": 297,
+					"left": 37,
+					"width": 48,
+					"height": 13,
+					"class": "Default",
+					"text": "Keep last"
+				},
+				"Text15": {
+					"type": "text",
+					"top": 297,
+					"left": 117,
+					"width": 188,
+					"height": 13,
+					"class": "Default",
+					"text": "logs (enter \"0\" to never delete)"
+				},
+				"log_keep_last_l1": {
+					"type": "input",
+					"top": 298,
+					"left": 87,
+					"width": 24,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "log_keep_last_l",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Group Box4": {
+					"type": "groupBox",
+					"top": 326,
+					"left": 28,
+					"width": 375,
+					"height": 54,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Wrapper Methods"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 354,
+					"left": 39,
+					"width": 46,
+					"height": 14,
+					"class": "Default",
+					"text": "Prefix :"
+				},
+				"wrapper_prefix": {
+					"type": "input",
+					"top": 354,
+					"left": 87,
+					"width": 48,
+					"height": 13,
+					"sizingX": "grow",
+					"dataSource": "wrapper_prefix",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"btnGenerateWrappers": {
+					"type": "button",
+					"top": 348,
+					"left": 148,
+					"width": 125,
+					"height": 22,
+					"dataSource": "btnGenerateWrappers",
+					"text": "Generate Wrappers",
+					"class": "Default",
+					"method": "ObjectMethods/btnGenerateWrappers.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btnUpdateTemplate": {
+					"type": "button",
+					"top": 348,
+					"left": 283,
+					"width": 111,
+					"height": 22,
+					"dataSource": "btnUpdateTemplate",
+					"text": "Update Template",
+					"class": "Default",
+					"method": "ObjectMethods/btnUpdateTemplate.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Group Box5": {
+					"type": "groupBox",
+					"top": 386,
+					"left": 28,
+					"width": 375,
+					"height": 54,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Method Templates"
+				},
+				"Button": {
+					"type": "button",
+					"top": 408,
+					"left": 39,
+					"width": 158,
+					"height": 22,
+					"dataSource": "Button",
+					"text": "Restore Method Template",
+					"class": "Default",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 408,
+					"left": 217,
+					"width": 166,
+					"height": 22,
+					"dataSource": "Button",
+					"text": "Restore Test Case Template",
+					"class": "Default",
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 42,
+					"left": 28,
+					"width": 101,
+					"height": 13,
+					"class": "Default",
+					"text": "Test method prefix :"
+				},
+				"test_method_prefix_t": {
+					"type": "input",
+					"top": 43,
+					"left": 131,
+					"width": 38,
+					"height": 13,
+					"dataSource": "test_method_prefix_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"ckbx_default_createtest": {
+					"type": "checkbox",
+					"top": 64,
+					"left": 28,
+					"width": 278,
+					"height": 13,
+					"dataSource": "ckbx_default_createtest",
+					"text": "Default to create test case for new project methods",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_default_strictconventions": {
+					"type": "checkbox",
+					"top": 89,
+					"left": 148,
+					"width": 100,
+					"height": 15,
+					"dataSource": "ckbx_default_strictconventions",
+					"text": "Strictly enforced",
+					"class": "Default",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"code_style_lb": {
+					"type": "listbox",
+					"top": 106,
+					"left": 28,
+					"width": 212,
+					"height": 160,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "code_style_lb",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "18px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "Column1",
+							"dataSource": "code_style_datatype",
+							"width": 77,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "Data Type",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Column2",
+							"dataSource": "code_style_prefix",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column2.4dm",
+							"header": {
+								"name": "Header2",
+								"text": "Prefix",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "Column3",
+							"dataSource": "code_style_suffix",
+							"width": 60,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/Column3.4dm",
+							"header": {
+								"name": "Header3",
+								"text": "Suffix",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "code_style_datatype_id",
+							"dataSource": "code_style_datatype_id",
+							"dataSourceTypeHint": "number",
+							"width": 10,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"enterable": false,
+							"visibility": "hidden",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Header4",
+								"dataSource": "Header4",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil4",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Text5": {
+					"type": "text",
+					"top": 89,
+					"left": 28,
+					"width": 118,
+					"height": 14,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Naming conventions"
+				},
+				"home_folders_lb": {
+					"type": "listbox",
+					"top": 108,
+					"left": 267,
+					"width": 186,
+					"height": 138,
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"dataSource": "home_folders_lb",
+					"hideFocusRing": true,
+					"rowHeight": "18px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"showHeaders": false,
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "home_folders_at",
+							"dataSource": "home_folders_at",
+							"width": 171,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Header5",
+								"dataSource": "Header5",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil5",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 90,
+					"left": 268,
+					"width": 133,
+					"height": 13,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Explorer Home Folders"
+				},
+				"Picture Button": {
+					"type": "button",
+					"top": 247,
+					"left": 268,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnRunAllTests",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RunTests"
+					},
+					"shortcutKey": "a",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/add_20.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/button_bkgd.png",
+					"method": "ObjectMethods/Picture Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture Button1": {
+					"type": "button",
+					"top": 247,
+					"left": 288,
+					"width": 20,
+					"height": 20,
+					"sizingY": "move",
+					"dataSource": "btnRunAllTests",
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/RunTests"
+					},
+					"shortcutKey": "a",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"class": "Default",
+					"focusable": false,
+					"icon": "/RESOURCES/Images/delete_20.png",
+					"iconFrames": 4,
+					"style": "custom",
+					"customBackgroundPicture": "/RESOURCES/Images/button_bkgd.png",
+					"method": "ObjectMethods/Picture Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text7": {
+					"type": "text",
+					"top": 42,
+					"left": 176,
+					"width": 178,
+					"height": 13,
+					"class": "Default",
+					"text": "(if blank will default to underscore)"
+				},
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 276,
+					"left": 28,
+					"width": 315,
+					"height": 165,
+					"sizingY": "move",
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Default Method Properties"
+				},
+				"ckbx_def_prop_invisible": {
+					"type": "checkbox",
+					"top": 300,
+					"left": 40,
+					"width": 136,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "ckbx_def_prop_invisible",
+					"text": "Invisible",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_def_prop_4daction": {
+					"type": "checkbox",
+					"top": 320,
+					"left": 40,
+					"width": 301,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "ckbx_def_prop_4daction",
+					"text": "Available through 4DACTION, 4DMETHOD and 4DSCRIPT",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_def_prop_soap": {
+					"type": "checkbox",
+					"top": 340,
+					"left": 40,
+					"width": 156,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "ckbx_def_prop_soap",
+					"text": "Offered as a Web Service",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_def_prop_wsdl": {
+					"type": "checkbox",
+					"top": 360,
+					"left": 60,
+					"width": 116,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "ckbx_def_prop_wsdl",
+					"text": "Published in WSDL",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_def_prop_shared": {
+					"type": "checkbox",
+					"top": 380,
+					"left": 40,
+					"width": 236,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "ckbx_def_prop_shared",
+					"text": "Shared by components and host database",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_def_prop_sql": {
+					"type": "checkbox",
+					"top": 400,
+					"left": 40,
+					"width": 136,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "ckbx_def_prop_sql",
+					"text": "Available through SQL",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_def_prop_server": {
+					"type": "checkbox",
+					"top": 420,
+					"left": 40,
+					"width": 136,
+					"height": 13,
+					"sizingY": "move",
+					"dataSource": "ckbx_def_prop_server",
+					"text": "Execute on Server",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

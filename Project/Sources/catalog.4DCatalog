@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="UnitTester" uuid="C6787193F52F4F448BFD2B965386B543" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="test_table" uuid="D3DC64FC75974D9FAB792899CAE037B2" id="1">
+		<field name="id" uuid="FB3793E2E640446BA419E4C5527E917F" type="4" unique="true" autosequence="true" never_null="true" id="1"/>
+		<field name="Field_2" uuid="20D92BD73282465ABE01FEC908A72E8B" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="DC9AFDDCD9EC41F3B77562F2B00AE876" type="10" never_null="true" id="3"/>
+		<field name="Field_4" uuid="21A3C49B9F0441D7A3D9039EC694FA77" type="8" never_null="true" id="4"/>
+		<field name="Field_5" uuid="9A28EC9C6C714E24993D4E631AC23669" type="9" never_null="true" id="5"/>
+		<field name="Field_6" uuid="99542A077A7B49269FC58BDC42614FC5" type="1" never_null="true" id="6"/>
+		<field name="Field_7" uuid="54E1A97128584CF0A45F834072D375CB" type="3" never_null="true" id="7"/>
+		<field name="Field_8" uuid="1A6B77F0B639425CAB0B3E1FEB9C0AD2" type="4" never_null="true" id="8"/>
+		<field name="Field_9" uuid="5A6F65CF1AF04218BC544945C96E2821" type="5" never_null="true" id="9"/>
+		<field name="Field_10" uuid="AC84E23C9E1E40568526E6A280ED07C9" type="6" never_null="true" id="10"/>
+		<field name="Field_11" uuid="A3211628EB38406E8DBA446CCC379D4A" type="6" never_null="true" id="11"/>
+		<field name="Field_12" uuid="BE9F13951BC5488DB19C24B524994C6C" type="18" never_null="true" id="12"/>
+		<field name="Field_13" uuid="44217415F54B4B4DBC3A441BC1B2B667" type="12" never_null="true" id="13"/>
+		<primary_key field_name="id" field_uuid="FB3793E2E640446BA419E4C5527E917F"/>
+		<table_extra input_form="" output_form="">
+			<editor_table_info displayable_fields_count="12">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="69" top="37" width="120" height="319"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" unique_keys="true" name="pk_index_1" uuid="BED1E4A43E47DA4589DF2FD61E51E5A8" type="7">
+		<field_ref uuid="FB3793E2E640446BA419E4C5527E917F" name="id">
+			<table_ref uuid="D3DC64FC75974D9FAB792899CAE037B2" name="test_table"/>
+		</field_ref>
+	</index>
+	<base_extra package_name="UnitTester" structure_file_name="UnitTester" data_file_path="\UnitTester.4DD" ppc_code_stamp="5835" __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<temp_folder folder_selector="data"/>
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>

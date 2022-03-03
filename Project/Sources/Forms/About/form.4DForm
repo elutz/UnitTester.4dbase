@@ -1,0 +1,109 @@
+﻿{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"width": 320,
+	"height": 180,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Text2": {
+					"type": "text",
+					"top": 103,
+					"left": 17,
+					"width": 271,
+					"height": 13,
+					"stroke": "#0024EC",
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"textDecoration": "underline",
+					"text": "https://github.com/markschaake/UnitTester4D"
+				},
+				"Invisible Button1": {
+					"type": "button",
+					"top": 104,
+					"left": 16,
+					"width": 271,
+					"height": 12,
+					"dataSource": "Invisible Button",
+					"display": false,
+					"method": "ObjectMethods/Invisible Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"btn_close": {
+					"type": "button",
+					"top": 136,
+					"left": 247,
+					"width": 55,
+					"height": 22,
+					"dataSource": "btn_close",
+					"text": "Close",
+					"class": "Default",
+					"method": "ObjectMethods/btn_close.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Picture2": {
+					"type": "picture",
+					"top": 4,
+					"left": 16,
+					"width": 47,
+					"height": 45,
+					"pictureFormat": "scaled",
+					"picture": "/RESOURCES/Images/SCIcon_128.png"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 59,
+					"left": 16,
+					"width": 286,
+					"height": 29,
+					"class": "Default",
+					"text": "UnitTester was originally developed and maintained by \rSchaake Consulting, LLC. It is now an open source project."
+				},
+				"Text4": {
+					"type": "text",
+					"top": 18,
+					"left": 83,
+					"width": 219,
+					"height": 16,
+					"fontFamily": "Segoe UI",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"text": "UnitTester version  <version_t>"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

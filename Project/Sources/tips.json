@@ -1,0 +1,9 @@
+﻿{
+	"RunTests": "Run all tests (cmd+shft+a)",
+	"RunSelected": "Run selected tests (cmd+shft+s)",
+	"BuildApp": "Build application (cmd+shft+b)",
+	"MethodCreator": "Create method (cmd+shft+m)",
+	"Actions": "Run selected, add test suite, add test case, delete selected",
+	"Syncronize": "Get updates from server (cmd+shft+u)",
+	"Preferences": "Preferences (cmd+shft+p)"
+}

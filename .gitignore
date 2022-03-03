@@ -1,0 +1,8 @@
+*~
+Data/*
+userPreferences.*/*
+Project/Trash
+Project/DerivedData
+.idea
+.hg*
+package.command

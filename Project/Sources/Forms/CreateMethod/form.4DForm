@@ -1,0 +1,526 @@
+﻿{
+	"destination": "detailScreen",
+	"windowTitle": "UnitTester Method Creator",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Group Box3": {
+					"type": "groupBox",
+					"top": 3,
+					"left": 345,
+					"width": 315,
+					"height": 168,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Method Properties"
+				},
+				"Group Box2": {
+					"type": "groupBox",
+					"top": 3,
+					"left": 15,
+					"width": 315,
+					"height": 375,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "Method Details"
+				},
+				"Group Box1": {
+					"type": "groupBox",
+					"top": 186,
+					"left": 345,
+					"width": 315,
+					"height": 64,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"fontWeight": "bold",
+					"text": "UnitTester"
+				},
+				"Group Box": {
+					"type": "groupBox",
+					"top": 163,
+					"left": 25,
+					"width": 289,
+					"height": 64,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"text": "Return Value (Optional)"
+				},
+				"Text": {
+					"type": "text",
+					"top": 27,
+					"left": 25,
+					"width": 82,
+					"height": 13,
+					"class": "Default",
+					"text": "Method Name :"
+				},
+				"Text1": {
+					"type": "text",
+					"top": 47,
+					"left": 25,
+					"width": 82,
+					"height": 13,
+					"class": "Default",
+					"text": "Home Folder :"
+				},
+				"Variable": {
+					"type": "input",
+					"top": 27,
+					"left": 108,
+					"width": 186,
+					"height": 13,
+					"dataSource": "method_name_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/Variable.4dm",
+					"events": [
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"cbHomeFolder": {
+					"type": "combo",
+					"top": 44,
+					"left": 106,
+					"width": 189,
+					"height": 17,
+					"dataSource": "cbHomeFolder",
+					"class": "Default",
+					"method": "ObjectMethods/cbHomeFolder.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"description_t": {
+					"type": "input",
+					"top": 85,
+					"left": 27,
+					"width": 272,
+					"height": 73,
+					"dataSource": "description_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"returnvar_t": {
+					"type": "input",
+					"top": 185,
+					"left": 160,
+					"width": 143,
+					"height": 13,
+					"dataSource": "returnvar_t",
+					"class": "Default",
+					"hideFocusRing": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"method": "ObjectMethods/returnvar_t.4dm",
+					"events": [
+						"onLosingFocus",
+						"onGettingFocus",
+						"onDataChange"
+					]
+				},
+				"cbReturnType": {
+					"type": "combo",
+					"top": 203,
+					"left": 158,
+					"width": 146,
+					"height": 17,
+					"dataSource": "cbReturnType",
+					"class": "Default",
+					"method": "ObjectMethods/cbReturnType.4dm",
+					"events": [
+						"onLoad",
+						"onLosingFocus",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"params_listbox": {
+					"type": "listbox",
+					"top": 249,
+					"left": 27,
+					"width": 288,
+					"height": 116,
+					"resizingMode": "legacy",
+					"dataSource": "params_listbox",
+					"hideFocusRing": true,
+					"sortable": false,
+					"movableRows": false,
+					"rowHeight": "18px",
+					"rowHeightAutoMin": "20px",
+					"rowHeightAutoMax": "20px",
+					"scrollbarHorizontal": "hidden",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"fontFamily": "Tahoma",
+					"fontSize": 11,
+					"columns": [
+						{
+							"name": "params_varnames",
+							"dataSource": "params_varnames",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onLosingFocus",
+								"onDataChange"
+							],
+							"method": "ObjectMethods/params_varnames.4dm",
+							"header": {
+								"name": "Header1",
+								"text": "Variable name",
+								"dataSource": "Header1",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil1",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "params_types",
+							"dataSource": "params_types",
+							"width": 100,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "Data Type",
+								"dataSource": "Header2",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil2",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						},
+						{
+							"name": "params_isoptional",
+							"dataSource": "params_isoptional",
+							"dataSourceTypeHint": "boolean",
+							"width": 53,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"controlType": "checkbox",
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"textAlign": "center",
+							"fontFamily": "Tahoma",
+							"fontSize": 11,
+							"events": [
+								"onClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Optional",
+								"dataSource": "Header3",
+								"stroke": "#000000",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							},
+							"footer": {
+								"name": "Fußteil3",
+								"timeFormat": "hh_mm_ss",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"fontFamily": "Tahoma",
+								"fontSize": 11
+							}
+						}
+					]
+				},
+				"ckbx_prop_invisible": {
+					"type": "checkbox",
+					"top": 27,
+					"left": 357,
+					"width": 136,
+					"height": 13,
+					"dataSource": "ckbx_prop_invisible",
+					"text": "Invisible",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_prop_4daction": {
+					"type": "checkbox",
+					"top": 47,
+					"left": 357,
+					"width": 301,
+					"height": 13,
+					"dataSource": "ckbx_prop_4daction",
+					"text": "Available through 4DACTION, 4DMETHOD and 4DSCRIPT",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_prop_soap": {
+					"type": "checkbox",
+					"top": 67,
+					"left": 357,
+					"width": 156,
+					"height": 13,
+					"dataSource": "ckbx_prop_soap",
+					"text": "Offered as a Web Service",
+					"class": "Default",
+					"method": "ObjectMethods/ckbx_prop_soap.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_prop_wsdl": {
+					"type": "checkbox",
+					"top": 87,
+					"left": 377,
+					"width": 116,
+					"height": 13,
+					"dataSource": "ckbx_prop_wsdl",
+					"text": "Published in WSDL",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_prop_shared": {
+					"type": "checkbox",
+					"top": 107,
+					"left": 357,
+					"width": 236,
+					"height": 13,
+					"dataSource": "ckbx_prop_shared",
+					"text": "Shared by components and host database",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_prop_sql": {
+					"type": "checkbox",
+					"top": 127,
+					"left": 357,
+					"width": 136,
+					"height": 13,
+					"dataSource": "ckbx_prop_sql",
+					"text": "Available through SQL",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_prop_server": {
+					"type": "checkbox",
+					"top": 147,
+					"left": 357,
+					"width": 136,
+					"height": 13,
+					"dataSource": "ckbx_prop_server",
+					"text": "Execute on Server",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"ckbx_create_test": {
+					"type": "checkbox",
+					"top": 205,
+					"left": 350,
+					"width": 98,
+					"height": 13,
+					"dataSource": "ckbx_create_test",
+					"text": "Create test case",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"cbTestSuite": {
+					"type": "combo",
+					"top": 226,
+					"left": 418,
+					"width": 226,
+					"height": 17,
+					"dataSource": "cbTestSuite",
+					"class": "Default",
+					"method": "ObjectMethods/cbTestSuite.4dm",
+					"events": [
+						"onLoad",
+						"onDataChange",
+						"onAfterKeystroke"
+					]
+				},
+				"Button": {
+					"type": "button",
+					"top": 356,
+					"left": 598,
+					"width": 60,
+					"height": 22,
+					"dataSource": "btnOk",
+					"text": "OK",
+					"class": "Default",
+					"method": "ObjectMethods/Button.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 356,
+					"left": 518,
+					"width": 60,
+					"height": 22,
+					"dataSource": "btnCancel",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"method_length_l": {
+					"type": "input",
+					"top": 27,
+					"left": 300,
+					"width": 23,
+					"height": 13,
+					"dataSource": "method_length_l",
+					"dataSourceTypeHint": "number",
+					"class": "Default",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 185,
+					"left": 33,
+					"width": 128,
+					"height": 13,
+					"class": "Default",
+					"text": "Return Variable Name :"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 205,
+					"left": 33,
+					"width": 128,
+					"height": 13,
+					"class": "Default",
+					"text": "Return Data Type :"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 68,
+					"left": 37,
+					"width": 88,
+					"height": 13,
+					"class": "Default",
+					"text": "Description"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 234,
+					"left": 37,
+					"width": 129,
+					"height": 13,
+					"fontFamily": "Segoe UI",
+					"fontSize": 11,
+					"text": "Parameters"
+				},
+				"Text6": {
+					"type": "text",
+					"top": 228,
+					"left": 350,
+					"width": 82,
+					"height": 13,
+					"class": "Default",
+					"text": "Suite Folder :"
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

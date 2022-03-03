@@ -1,0 +1,328 @@
+﻿[
+	{
+		"text": "Assertion Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_Unit_AssertEquals",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_Unit_AssertEqualsNumeric",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_Unit_AssertNotEquals",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_Unit_RecordEqualAssert",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "schabbidappi^",
+				"params": {
+					"type": "suite"
+				},
+				"list": [
+					{
+						"text": "_helper_ListFromCollection",
+						"params": {
+							"type": "unit"
+						}
+					}
+				]
+			}
+		]
+	},
+	{
+		"text": "Dev Log Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_logger",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Exception Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "__Exceptions",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Helper Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_helper_ArrayTextAppend",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_ArrayTextDeleteBlanks",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_ArrayToText",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_DocumentToText",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_IsEmailValid",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_LoadTestFile",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_PrefTypeFromVarNameGet",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_SaveSuitesDocument",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_TimestampDifferenceGet",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_TimestampGet",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_helper_TimestampToISO",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Log Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_log_list",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Method Creator Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_method_doesExist",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_method_HomeFolderArraySave",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_method_SyntaxGet",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Mock Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_Unit_Mock_RecordCreate",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Setup Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_setup_copy_template",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_setup_enforece_seats",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_setup_license_type",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_setup_validate_key",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Suite List Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_suite_SetListItemType",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Suite Method Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_suite_PositionInList",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Team Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_client_request_send",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_server_client_register",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_server_request_processor_start",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_server_request_queue_is_empty",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_server_request_queue_start",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	},
+	{
+		"text": "Temp Tests",
+		"params": {
+			"type": "suite"
+		},
+		"list": [
+			{
+				"text": "_ComponentMode",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_StringSplit",
+				"params": {
+					"type": "unit"
+				}
+			},
+			{
+				"text": "_TextArrayToString",
+				"params": {
+					"type": "unit"
+				}
+			}
+		]
+	}
+]

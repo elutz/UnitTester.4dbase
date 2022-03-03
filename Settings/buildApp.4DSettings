@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Preferences4D>
+
+  <BuildApp>
+    <BuildCompiled>False</BuildCompiled>
+    <IncludeAssociatedFolders>True</IncludeAssociatedFolders>
+    <BuildComponent>True</BuildComponent>
+    <BuildApplicationSerialized>False</BuildApplicationSerialized>
+    <RuntimeVL>
+      <LastDataPathLookup>ByAppName</LastDataPathLookup>
+    </RuntimeVL>
+    <SourcesFiles>
+      <RuntimeVL>
+        <RuntimeVLIncludeIt>True</RuntimeVLIncludeIt>
+      </RuntimeVL>
+      <CS>
+        <ServerIncludeIt>False</ServerIncludeIt>
+        <ClientWinIncludeIt>False</ClientWinIncludeIt>
+        <ClientMacIncludeIt>False</ClientMacIncludeIt>
+      </CS>
+    </SourcesFiles>
+    <CS>
+      <BuildServerApplication>False</BuildServerApplication>
+      <LastDataPathLookup>ByAppName</LastDataPathLookup>
+      <BuildCSUpgradeable>False</BuildCSUpgradeable>
+      <CurrentVers>1</CurrentVers>
+      <HardLink></HardLink>
+      <MacCompiledDatabaseToWinIncludeIt>False</MacCompiledDatabaseToWinIncludeIt>
+      <MacCompiledDatabaseToWin/>
+    </CS>
+    <BuildApplicationName>UnitTester</BuildApplicationName>
+    <BuildWinDestFolder>..\UnitTester_Build\</BuildWinDestFolder>
+    <ArrayExcludedPluginName>
+      <ItemsCount>1</ItemsCount>
+      <Item1>4D Internet Commands</Item1>
+    </ArrayExcludedPluginName>
+    <ArrayExcludedPluginID>
+      <ItemsCount>1</ItemsCount>
+      <Item1>15010</Item1>
+    </ArrayExcludedPluginID>
+    <ArrayExcludedComponentName>
+      <ItemsCount>6</ItemsCount>
+      <Item1>4D Mobile App Server</Item1>
+      <Item2>4D Progress</Item2>
+      <Item3>4D SVG</Item3>
+      <Item4>4D ViewPro</Item4>
+      <Item5>4D Widgets</Item5>
+      <Item6>4D WritePro Interface</Item6>
+    </ArrayExcludedComponentName>
+    <Licenses>
+      <ArrayLicenseWin>
+        <ItemsCount>1</ItemsCount>
+        <Item1>C:\ProgramData\4D\Licenses\R-PNUD180UUC0018PHQP0E38A.license4D</Item1>
+      </ArrayLicenseWin>
+    </Licenses>
+    <SignApplication>
+      <MacSignature>False</MacSignature>
+      <MacCertificate></MacCertificate>
+    </SignApplication>
+  </BuildApp>
+
+
+</Preferences4D>
